@@ -1,0 +1,6 @@
+/* importing fonts from Roboto folder */
+
+@font-face {
+    font-family: "Roboto";
+    src: '../fonts/Roboto/Roboto-Regular.ttf';
+}

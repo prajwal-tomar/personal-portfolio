@@ -1,0 +1,316 @@
+/*  importing font from fonts.css file */
+
+@import url(./fonts.css);
+@import url(./partials/_variables.css);
+
+/* Global Styles */
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+button:focus,
+button:active,
+button:hover,
+.btn.active,
+.btn:active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.title-text {
+  font-style: normal;
+  line-height: 62px;
+  font-size: 45px;
+  font-family: "Roboto", cursive;
+  font-weight: bold;
+}
+
+.font-roboto {
+  font-family: "Roboto", cursive;
+}
+/* Starting Navbar */
+
+.header_area .main-menu .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+  padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+  font-family: "Roboto", cursive;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.header_area .main-menu .navbar-nav .active a {
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.site-main .site-banner {
+  background-image: url(../img/banner/home-banner.png);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+
+.site-main .site-banner .site-title h3 {
+  padding-top: 20%;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.site-main .site-banner .site-title h3:after {
+  content: "";
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.site-main .site-banner .site-title h4 {
+  font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-img {
+  padding-top: 15%;
+  width: 90%;
+}
+
+.button.primary-button {
+  padding: 0.8rem 2.2rem;
+  font: normal 500 16px/20px "Roboto", cursive;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background.6s ease;
+}
+
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  right: -2px;
+  left: -2px;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  content: "";
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.button.secondary-button {
+  padding: 0.8rem 2.2rem;
+  font: normal 500 16px/20px "Roboto", cursive;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  background: white;
+  background-clip: padding-box;
+}
+
+.button.secondary-button:hover {
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  transition: background.6s ease;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Ending Navbar */
+
+/* Starting About Area */
+
+.about-area {
+  padding: 8rem 5rem;
+}
+
+.about-area .about-title span {
+  display: block;
+}
+
+.about-area .about-title {
+  font-weight: bolder;
+  font-family: "Roboto", cursive;
+  letter-spacing: 21px;
+}
+
+.about-area .para {
+  width: 80%;
+}
+
+.about-area .about-img {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  left: 90px;
+  bottom: 30px;
+}
+
+.about-area .about-area-text .paragraph {
+  padding: 0.4rem 0;
+}
+
+p.para {
+  color: grey;
+  font-style: normal;
+  font-weight: 450;
+  font-family: "Roboto", cursive;
+}
+
+/* Ending About Area */
+
+/* Start Brand Area */
+
+.brand-area {
+  padding: 1rem 20rem;
+  margin-bottom: 4rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand {
+  border: 1px solid rgba(128, 128, 128, 0.164);
+  text-align: center;
+  padding: 1.8rem 0rem;
+  margin: 0.9rem 0;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.brand-area .first-row .col-lg-4 > .single-brand > img {
+  width: 50%;
+}
+
+.brand-area .first-row .col-lg-4 > .single-brand:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img {
+  filter: brightness(0.15);
+}
+
+.site-main .brand-area .experience-area {
+  padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span {
+  display: block;
+}
+
+.site-main .brand-area .experience-area .years-area {
+  background: url(../img/client-info-bg.png);
+  background-repeat: no-repeat;
+  background-position: 45px 20px;
+  width: 40rem;
+  height: 18rem;
+  padding-left: 6rem;
+  position: relative;
+}
+
+.site-main .brand-area .experience-area .bg-panel {
+  position: absolute;
+  top: 0%;
+  left: -190px;
+  background: #e029290a;
+  width: 400px;
+  height: 400px;
+  z-index: -2;
+  margin-left: 340px;
+}
+
+.site-main .brand-area .experience-area .years-area .years {
+  font-size: 84px;
+  line-height: 40px;
+  color: rgb(107, 1, 107);
+  font-weight: bold;
+  font-family: "Roboto", cursive;
+}
+
+.site-main .brand-area .experience-area .years-area span {
+  font: normal 600 22px/30px "Roboto", cursive;
+}
+
+.site-main .brand-area .experience-area .call-area {
+  padding-left: 8rem;
+}
+
+.site-main .services-area {
+  padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-offered {
+  padding: 0 14rem;
+}
+
+.site-main .services-area .services-offered h1 {
+  font-size: 35px;
+}
+
+.services {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background-color: #44b9dc0c;
+  transition: transform 0.7s ease;
+}
+
+.services:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  transform: scale(1.1);
+}
+
+.site-main .project-area {
+  padding: 4rem 0;
+}
+
+.site-main .buttons-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px "Roboto", cursive;
+  text-transform: uppercase;
+}
+
+.site-main .buttons-group button + button {
+  padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project .title h4 {
+  font: normal 700 25px/12px "Roboto", cursive;
+}
